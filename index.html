@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Maps (Reborn)</title>
+
+	<style type="text/css">
+		#map{
+			height: 100vh;
+			width: 65%;
+			float: left;
+			border: 5px solid black;
+			border-radius: 25px
+		}
+		#cities-container{
+			width: 30%;
+			float:  left;
+			
+		}
+		.city-name{
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<div id="cities-container">
+		Cities app is loading...
+	</div>
+
+	<!-- Include react, reactDOM, and bable -->
+	<script src="https://fb.me/react-15.1.0.js"></script>
+	<script src="https://fb.me/react-dom-15.1.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSq7nzkJNoVJjX1pX1Zp6rrfpSvrMVk8o"
+    ></script>
+
+	<script type="text/javascript" src="cities.js"></script>
+	<script type="text/babel" src="maps.jsx"></script>
+
+</body>
